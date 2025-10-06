@@ -33,15 +33,15 @@ const Page = () => {
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <Image src="/Pending.svg" alt="logo" width={30} height={30} />
-          <h2 className=" text-[#FF6767]">TO-DO</h2>
+          <h2 className=" text-[#FF6767] text-sm md:text-base">In-Progress Tasks</h2>
         </div>
         <button
           className="cursor-pointer text-[#ff6767] hover:bg-[#ff6767] hover:text-white transition-colors rounded-md flex items-baseline  p-1"
           onClick={() => setIsFormModal(true)}
         >
           {" "}
-          <span className=" text-2xl">+</span>{" "}
-          <span className="text-lg ">Add Task</span>
+          <span className=" md:text-2xl">+</span>{" "}
+          <span className="md:text-lg ">Add Task</span>
         </button>
       </div>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">

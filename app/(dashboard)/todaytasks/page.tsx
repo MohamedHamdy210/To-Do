@@ -32,7 +32,7 @@ const Page = () => {
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <Image src="/Pending.svg" alt="logo" width={30} height={30} />
-          <h2 className=" text-[#FF6767]">TO-DO</h2>
+          <h2 className=" text-[#FF6767]">Today Tasks</h2>
         </div>
         <button
           className="cursor-pointer text-[#ff6767] hover:bg-[#ff6767] hover:text-white transition-colors rounded-md flex items-baseline  p-1"
