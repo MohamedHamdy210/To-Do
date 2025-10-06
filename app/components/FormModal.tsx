@@ -293,7 +293,7 @@ const FormModal = ({
                           alt=""
                           src={
                             attachment.url.length === 0
-                              ? "/placeHolder.svg"
+                              ? "/placeholder.svg"
                               : attachment.url
                           }
                           width={150}

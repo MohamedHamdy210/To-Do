@@ -20,7 +20,7 @@ const Header = () => {
           <span>Do</span>{" "}
         </h1>
       </Link>
-      <div className="flex items-center w-1/3 shadow-2xl bg-white rounded-md">
+      <div className="flex items-center w-1/2 md:w-1/3 shadow-2xl bg-white rounded-md">
         <input
         value={search}
           type="text"
@@ -37,7 +37,7 @@ const Header = () => {
           <Image src="/search.svg" alt="search" width={16} height={16} />
         </button>
       </div>
-      <div className="flex flex-col items-center ">
+      <div className="hidden md:flex md:flex-col items-center ">
         <span>
           {new Date().toLocaleDateString("en-GB", { weekday: "long" })}
         </span>

@@ -80,16 +80,22 @@ const TaskModal = ({
             }}
           />
         </div>
-        <div className="flex gap-5 items-center">
-          <Image
-            src={taskAttachment.url.length>0 ? taskAttachment.url : "/placeholder.svg"}
-            width={200}
-            height={200}
-            alt="pic"
-            className="rounded-lg"
-          />
-          <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-2xl">{taskTitle}</h1>
+        <div className="flex flex-col md:flex-row gap-5 items-center">
+          <div className="rounded-2xl flex justify-center items-center">
+            <Image
+              src={
+                taskAttachment.url.length > 0
+                  ? taskAttachment.url
+                  : "/placeholder.svg"
+              }
+              width={200}
+              height={200}
+              alt="pic"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="flex flex-col w-full gap-2">
+            <h1 className="font-bold line-clamp-1  text-2xl">{taskTitle}</h1>
 
             <h3 className="text-gray-400 ">Created at: {taskCreatedAt}</h3>
           </div>
@@ -130,9 +136,7 @@ const TaskModal = ({
           <div className="flex gap-3 justify-end ">
             <button
               className="bg-[#ff6767] p-2 rounded-md cursor-pointer transition-colors hover:bg-[#f00]"
-              onClick={
-                handleDelete
-              }
+              onClick={handleDelete}
             >
               <Image src={"/delete.svg"} height={15} width={15} alt="delete" />
             </button>

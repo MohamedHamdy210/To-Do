@@ -94,7 +94,7 @@ const Menu = () => {
         }}
         
         className={`flex items-center cursor-pointer justify-center lg:justify-start gap-4 text-white
-         py-3  rounded-sm hover:bg-gray-500 md:px-1 absolute bottom-10 w-full`}
+         py-3  rounded-sm hover:bg-gray-500 md:px-1 absolute bottom-12 w-full`}
       >
         <Image src={"/logout.svg"} alt="logout" width={18} height={18} />
         <span className="hidden lg:block">Log Out</span>

@@ -53,7 +53,7 @@ const Page = ({ params }: { params: Promise<{ searchParam: string }> }) => {
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
         {filterdTasks?.length === 0 ? (
           <h1 className="text-2xl place-self-center  col-span-full text-gray-500">
-            No Tasks Contains {searchParam} Yet
+            No Tasks Contains {searchParam}
           </h1>
         ) : (
           filterdTasks?.map((task) => (

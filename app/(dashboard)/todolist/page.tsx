@@ -21,7 +21,7 @@ const Page = () => {
   });
 
   return (
-    <div className="p-5 bg-white shadow-2xl rounded-lg m-5 flex flex-col gap-2 h-full">
+    <div className="p-5 bg-white shadow-2xl rounded-lg m-5 flex flex-col gap-2 ">
       {isFormModal && (
         <FormModal
           setModelData={setModalData}

@@ -112,7 +112,7 @@ const TaskCard = ({
         }}
       >
         <div className="flex items-center justify-between">
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 w-[80%] items-center">
             <Image
               src={
                 status === "Not Started"
@@ -125,7 +125,7 @@ const TaskCard = ({
               width={12}
               height={12}
             />
-            <h1 className="text-lg font-semibold">{title}</h1>
+            <h1 className="text-lg line-clamp-1 font-semibold">{title}</h1>
           </div>
           <div
             className="relative cursor-pointer mx-3"
